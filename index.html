@@ -10,7 +10,6 @@
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
     <style>
-        
         * {
             box-sizing: border-box;
         }
@@ -28,9 +27,11 @@
             /* center the grid */
             margin: 1em auto;
         }
+
         p {
             line-height: 1.2em;
         }
+
         a {
             color: #FFFF99;
             text-decoration: none;
@@ -57,6 +58,7 @@
             display: block;
             margin-bottom: 0;
         }
+
         #schedule span {
             display: block;
             text-align: center;
@@ -92,7 +94,9 @@
             margin: 0 10px;
             max-width: 200px;
             margin: 0 10px;
+            padding: 10px;
         }
+
         #schedule {
             display: flex;
             flex-direction: column;
@@ -100,19 +104,24 @@
             justify-content: center;
             width: 100%;
             align-items: center;
+            padding-left: 1em;
         }
-        /* The two child divs of #schedule  each take up 50% of the width */
+
         #schedule div {
             width: 100%;
         }
+
         @media (min-width: 600px) {
             #schedule {
                 flex-direction: row;
+                padding-left: 0em;
             }
+
             #schedule div {
                 width: 50%;
             }
         }
+
         #schedule ul {
             padding: 0 0 0 1em;
         }
@@ -201,6 +210,10 @@
                 <h2>Schedule</h2>
                 <table>
                     <tr>
+                        <td>8:30am</td>
+                        <td>Breakfast</td>
+                    </tr>
+                    <tr>
                         <td>9:30am</td>
                         <td>Opening remarks</td>
                     </tr>
@@ -210,18 +223,18 @@
                     </tr>
                     <tr>
                         <td>10:30am</td>
-                        <td>Break</td>
-                    </tr>
-                    <tr>
-                        <td>10:45am</td>
                         <td><a href="#founder-panel">Founder Panel: Raising While Black</a></td>
                     </tr>
                     <tr>
-                        <td>11:45am</td>
+                        <td>11:15am</td>
                         <td>Break</td>
                     </tr>
                     <tr>
-                        <td>12:00pm</td>
+                        <td>11:30am</td>
+                        <td><a href="#vc-panel">VC Panel: The Black VC Journey</a></td>
+                    </tr>
+                    <tr>
+                        <td>12:30pm</td>
                         <td>Lunch</td>
                     </tr>
                     <tr>
@@ -234,7 +247,7 @@
                     </tr>
                     <tr>
                         <td>3:15pm</td>
-                        <td><a href="#vc-panel">VC Panel: The Black VC Journey</a></td>
+                        <td><a href="#keynote">Keynote: Iddris Sandu</a></td>
                     </tr>
                     <tr>
                         <td>4:00pm</td>
@@ -249,8 +262,46 @@
             <img src="./static/tsai-center-inverted.png" alt="Yale Tsai CITY logo">
             <img src="./static/tcfmicweb-removebg-preview.png" alt="The Community Foundation logo">
         </div>
+        <div id="keynote-speakers">
+            <a id="keynote">
+                <h2>Keynote: Iddris Sandu</h2>
+            </a>
+            <div class="speakers">
+                <div class="speaker">
+                    <img src="./static/iddris.jpg" alt="" width="100%">
+                    <span class="speaker-name">Iddris Sandu</span>
+                    <span class="speaker-title">Founder & CEO, Spacial Labs</span>
+                    <p>Iddris Sandu is a young visionary and technological genius who has made a significant impact in
+                        the fields of engineering, design, and entrepreneurship. He was born in Ghana, West Africa, in
+                        1997, but was raised in Compton, California. At the age of 10, Iddris started learning coding
+                        and began to explore the possibilities of technology. By the age of 13, he had already created
+                        his first mobile application, which was a calculator. He continued to develop his skills and
+                        knowledge, and at the age of 15, he created the first augmented reality game for the Starbucks
+                        app. Iddris has worked with major technology companies such as Google, Uber, and Instagram, and
+                        has also collaborated with prominent cultural figures, including Nipsey Hussle, Kanye West and
+                        Jaden Smith. He has been featured in Forbes' 30 Under 30 list for his contributions to the field
+                        of engineering.</p>
+
+                    <p>In addition to his technical accomplishments, Iddris is a visionary entrepreneur who has founded
+                        multiple startups. His ventures include a company that creates smart retail experiences for
+                        brands, a company that offers AI-powered home automation solutions, and a company that produces
+                        advanced autonomous vehicles. Most recently, Iddris founded Spacial Labs, a technology
+                        infrastructure company that is powering the next generation of Augmented Reality, Blockchain,
+                        Omni-channel, and Immersive Experiences - collectively known as the Metaverse. </p>
+
+                    <p>Iddris Sandu's work and innovations have earned him numerous awards and recognition, including
+                        the Black Enterprise BE Modern Man of the Year award, the Council of Urban Professionals
+                        Catalyst Change Agent award, and the Ford Freedom Unsung Genius award. His passion for using
+                        technology to make a positive impact on society has made him a role model and inspiration for
+                        many young people around the world.</p>
+
+                </div>
+            </div>
+        </div>
         <div id="founder-speakers">
-            <a id="founder-panel"><h2>Founder Panel: Raising While Black</h2></a>
+            <a id="founder-panel">
+                <h2>Founder Panel: Raising While Black</h2>
+            </a>
             <div class="speakers">
                 <div class="speaker">
                     <img src="./static/songe.jpg" alt="Songe LaRon" width="100%">
@@ -352,7 +403,9 @@
             </div>
         </div>
         <div id="vc-speakers">
-            <a id="vc-panel"><h2>VC Panel: The Black VC Journey</h2></a>
+            <a id="vc-panel">
+                <h2>VC Panel: The Black VC Journey</h2>
+            </a>
             <div class="speakers">
                 <div class="speaker">
                     <img src="./static/wayne.jpg" alt="Wayne Kimball Jr." width="100%">
@@ -436,37 +489,6 @@
 
 
     </div>
-
-    <script>
-        const end = new Date("2023-03-31T14:00:00-04:00").getTime();
-        //const end = new Date("November 09, 2020 00:00:00").getTime();
-        const dayEl = document.getElementById('days');
-        const hoursEl = document.getElementById('hours');
-        const minutesEl = document.getElementById('minutes');
-        const secondsEl = document.getElementById('seconds');
-        const seconds = 1000;
-        const minutes = seconds * 60;
-        const hours = minutes * 60;
-        const days = hours * 24;
-
-        const x = setInterval(function () {
-            let now = new Date().getTime();
-            const difference = end - now;
-
-            if (difference < 0) {
-                clearInterval(x);
-                document.getElementById("done").innerHTML = "We're married! 🎉";
-                return;
-            }
-
-            dayEl.innerText = Math.floor(difference / days);
-            hoursEl.innerText = Math.floor((difference % days) / hours);
-            minutesEl.innerText = Math.floor((difference % hours) / minutes);
-            secondsEl.innerText = Math.floor((difference % minutes) / seconds);
-        }, seconds);
-
-
-    </script>
 </body>
 
 </html>
